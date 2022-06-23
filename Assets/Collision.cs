@@ -9,8 +9,11 @@ public class Collision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) 
     {
-      UnityEngine.Debug.Log("some text");
-   
-
+      UnityEngine.Debug.Log("Bump!");
+      
+    }
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        UnityEngine.Debug.Log("What was that?");
     }
 }
